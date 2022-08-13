@@ -1,0 +1,42 @@
+[
+{
+    "name": "Paracetamol",
+    "time":"3-5h",
+    "dosage":"2-4 viên",
+    "require":"Dùng cho TH hạ sốt, giảm đau,...",
+    "prescription":"Sau ăn, không lạm dụng thuốc",
+    "note":"Có thể gây ngộ độc"
+},
+{
+    "name": "Oresol",
+    "time":"4-6h",
+    "dosage":"2-4 viên",
+    "require":"Dùng cho TH đau bụng, tiêu chảy,...",
+    "prescription":"",
+    "note":"Không dùng cho trẻ dưới 3 tuổi"
+},
+{
+    "name": "Betadine",
+    "time":"",
+    "dosage":"",
+    "require":"Dùng cho sát trùng, rửa vết thương,...",
+    "prescription":"",
+    "note":"Không được uống"
+},
+{
+    "name": "Pantenol",
+    "time":"2h-3h",
+    "dosage":"dạng tuýt kem (thuốc bôi)",
+    "require":"Dùng cho bỏng, các bệnhda liễu nhẹ,...",
+    "prescription":"",
+    "note":"Không được nuốt"
+},
+{
+    "name": "Acebutolol",
+    "time":"4-6h",
+    "dosage":"2-4 viên",
+    "require":"Dùng cho người suy tim, đau tim",
+    "prescription":"không lạm dụng thuốc",
+    "note":""
+}
+]

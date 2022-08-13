@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="utf-8" />
+    <title>List of appointments at HealthPlus</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script data-require="angular.js@1.0.x" src="http://code.angularjs.org/1.0.7/angular.min.js"
+        data-semver="1.0.7"></script>
+    <script src="./jsonload.js"></script>
+    <link
+      rel="icon"
+      href="./assets/img/logo.png"
+      type="image/png"
+      sizes="700x700"
+    />
+    <link rel="stylesheet" href="/assets/css/henkham.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-logo">
+            <a href="./index.html"><img class="container-logo-img" src="/assets/img/logo.png" alt="" width="300"></a>
+        </div>
+        <div class="container-content" ng-controller="jsonCtrl">
+            <h1 class="container-title">List of appointments at HealthPlus</h1>
+            <div class="container-add">Create new Customer:</div>
+            <form name="myForm">
+                <div class="mb-3 form-group">
+                    <label for="empName" class="form-label">Customer Name:</label>
+                    <input type="text" class="form-control form-control-lg" id="empName" ng-model="empName"
+                        placeholder="Enter Customer Name" required name="empName">
+                        <span id="spanError" class="d-none text-danger small ms-1">*error</span>
+                </div>
+
+                <div class="mb-3 form-group">
+                    <label for="empEmail" class="form-label">Customer Email:</label>
+                    <input type="email" class="form-control form-control-lg" id="empEmail" ng-model="empEmail"
+                        placeholder="Enter Customer Email" required>
+                        <span id="spanError" class="d-none text-danger small ms-1">*error</span>
+                </div>
+
+                <div class="mb-3 form-group">
+                    <label for="empPhoneNumber" class="form-label">Customer PhoneNumber:</label>
+                    <input type="text" class="form-control form-control-lg" id="empPhoneNumber" ng-model="empPhoneNumber"
+                        placeholder="Enter Customer PhoneNumber" required>
+                        <span id="spanError" class="d-none text-danger small ms-1">*error</span>
+                </div>
+
+                <div class="mb-3 form-group">
+                    <label for="empDate" class="form-label">Customer Date:</label>
+                    <input type="text" class="form-control form-control-lg" id="empDate" ng-model="empDate"
+                        placeholder="Enter Customer Date" required>
+                        <span id="spanError" class="d-none text-danger small ms-1">*error</span>
+                </div>
+
+                <div class="mb-3 form-group">
+                    <label for="empAdvise" class="form-label">Customer Advise:</label>
+                    <input type="text" class="form-control form-control-lg" id="empAdvise" ng-model="empAdvise"
+                        placeholder="Enter Customer Advise" required>
+                        <span id="spanError" class="d-none text-danger small ms-1">*error</span>
+                </div>
+
+                <button class="btn btn-add container-btn" ng-click="addEmp()">Add<i class="icon-plus"></i></button>
+                <br /><br />
+            </form>
+
+            <label class="container-search">Search by name: </label> <input class="container-input" type="text"
+                ng-model="search.name" placeholder="Search">
+            <table class="table table-striped container-table">
+                <thead>
+                    <th class="clone-nav">Name</th>
+                    <th class="clone-nav">Email</th>
+                    <th class="clone-nav">PhoneNumber</th>
+                    <th class="clone-nav">Date</th>
+                    <th class="clone-nav">Advise</th>
+                </thead>
+                <tr ng-repeat="resource in employees | filter:search">
+                    <td class="clone-elemnt">{{ resource.name }}</td>
+                    <td class="clone-elemnt">{{ resource.email }}</td>
+                    <td class="clone-elemnt">{{ resource.phoneNumber }}</td>
+                    <td class="clone-elemnt">{{ resource.date }}</td>
+                    <td class="clone-elemnt">{{ resource.advise }}</td>
+                </tr>
+            </table>
+        </div>
+        <a href="/include/header.html"><button class="btn container-btn">Back</button></a>
+    </div>
+</body>
+
+</html>

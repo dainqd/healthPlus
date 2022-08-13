@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Hoang Minh Hieu",
+        "phoneNumber":"0984384834",
+        "birthday":"2003-10-20",
+        "height":"168",
+        "weight":"52",
+        "blood_sugar":"90",
+        "blood_pressure":"140mmHg-90mmHg"
+    },
+    {
+        "name": "Nguyen Viet Anh",
+        "phoneNumber":"0848847474",
+        "birthday":"2003-09-08",
+        "height":"170",
+        "weight":"60",
+        "blood_sugar":"100",
+        "blood_pressure":"150mmHg-100mmHg"
+    },
+    {
+        "name": "Tran Thi Ngoc Anh",
+        "phoneNumber":"0365743674",
+        "birthday":"2003-04-22",
+        "height":"160",
+        "weight":"48",
+        "blood_sugar":"95",
+        "blood_pressure":"138mmHg-92mmHg"
+    },
+    {
+        "name": "Bui Thi Thuy",
+        "phoneNumber":"0949348849",
+        "birthday":"2001-02-04",
+        "height":"162",
+        "weight":"47",
+        "blood_sugar":"98",
+        "blood_pressure":"138mmHg-90mmHg"
+    },
+    {
+        "name": "Nguyen Thi Thuy Tien",
+        "phoneNumber":"0357455783",
+        "birthday":"2002-03-07",
+        "height":"158",
+        "weight":"45",
+        "blood_sugar":"92",
+        "blood_pressure":"45mmHg-92mmHg"
+    }
+    ]
